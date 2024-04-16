@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 // import cv from "@techstark/opencv-js";
 //import * as Tesseract from 'tesseract.js';
@@ -102,3 +103,24 @@ functionToExecute = async () => {
 //     let dilated = new cv.Mat();
 //     cv.dilate(eroded, dilated, M);
 // }
+=======
+
+// document.getElementById('actionButton').addEventListener('click', () => {
+//     chrome.runtime.sendMessage({ message: 'buttonClicked' });
+// });
+
+
+document.getElementById('actionButton').addEventListener('click', () => {
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+        chrome.runtime.sendMessage({ message: 'buttonClicked', tabId: tabs[0].id });
+    });
+});
+
+// cách 2
+// Trong file popup.js
+// document.getElementById('yourButtonId').addEventListener('click', function() {
+//     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+//         chrome.runtime.sendMessage({message: 'buttonClicked', tabId: tabs[0].id});
+//     });
+// });
+>>>>>>> b01cda4f08df921019b432dd5366a3930168d45f

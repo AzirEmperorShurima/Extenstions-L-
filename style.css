@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
@@ -91,4 +92,75 @@ body p{
     opacity: 1;
     transition: all .3s;
     cursor: pointer;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    border: 2px solid red;
+    border-radius: 20px;
+}
+body {
+    width: 300px;
+    min-height: 300px;
+    height: auto;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+body h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: auto;
+    height: 80px;
+    top: 0;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-bottom: 20px;
+   
+}
+body p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    min-height: 95px;
+    padding-bottom: 50px;
+}
+button {
+    position: fixed !important;;
+    top: 220px;
+    height: 25px;
+    margin-top: 20px;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border: 1px solid pink;
+    width: 200px;
+    border-radius: 50px;
+    opacity: 0.8;
+    font-weight: 700;
+}
+button:hover{
+    opacity: 1;
+    transition: all .3s;
+    cursor: pointer;
+>>>>>>> b01cda4f08df921019b432dd5366a3930168d45f
 }
